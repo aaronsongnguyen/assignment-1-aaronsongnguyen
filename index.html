@@ -1,9 +1,70 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <!-- Link your CSS file and other references here -->
-    </head>
-    <body>
-        <!-- Content goes here -->
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="assets/menu_icon.png" alt="Menu">
+        <div class="search">
+            <img src="assets/search_icon.png" alt="">
+            <input type="text" placeholder="Quick find" aria-label="Quick find">
+        </div>
+        <div class="counter">
+            <img src="assets/check_icon.png" alt="">
+            <span>30/5</span>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li class="current">
+                <img src="assets/inbox_icon.png" alt="">
+                <span>Inbox</span>
+                <span class="count">5</span>
+            </li>
+            <li>
+                <img src="assets/calendar_icon.png" alt="">
+                <span>Today</span>
+                <span class="count">5</span>
+            </li>
+            <li>
+                <img src="assets/upcoming_icon.png" alt="">
+                <span>Upcoming</span>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Inbox</h1>
+        <ul class="task-list">
+            <li>
+                <input type="radio" id="task1" name="task1">
+                <label for="task1">Call Mom</label>
+            </li>
+            <li>
+                <input type="radio" id="task2" name="task2">
+                <label for="task2">Buy the new issue of Scientific American</label>
+            </li>
+            <li>
+                <input type="radio" id="task3" name="task3">
+                <label for="task3">Return the textbook to Josie</label>
+            </li>
+            <li>
+                <input type="radio" id="task4" name="task4">
+                <label for="task4">Buy the new album by Rake</label>
+            </li>
+            <li>
+                <input type="radio" id="task5" name="task5">
+                <label for="task5">Buy a gift card for Dad</label>
+            </li>
+        </ul>
+    </main>
+</body>
 </html>
